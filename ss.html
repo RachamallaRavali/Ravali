@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <h1>Nav Bar</h1>
+       <nav class="navbar navbar-expand-sm bg-secondary">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="hello">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about .html">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">register</a>
+            </li>
+            <div class="container mt-3">
+                <div class="dropdown">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Button</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about .html">about</a></li>
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="https://cdn.pixabay.com/photo/2023/03/14/11/19/flower-7852094__340.jpg">image</a></li>
+                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    </ul>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Open modal
+              </button>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Modal body..
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </ul>
+        <form class="d-flex">
+            <input class=" " type="text" placeholder="search">
+            <button class="btn btn-primary" type="button">search</button>
+        </form>
+        </div>
+        </nav>
+    <div id="chinnu" class="carousel slide" data-bs-ride="carousel">
+
+        <!--indicators-->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#chinnu" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#chinnu" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#chinnu" data-bs-slide-to="2"></button>
+          
+        </div>
+  
+    <!--carousel-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="1.jpg" alt="rose" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="flowers-5202140__340.jpg" alt="rose" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="flower-purple-lical-blosso.jpg" alt="rose" class="d-block" style="width:100%">
+          </div>
+          
+        </div>
+  
+    <!--icons-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#chinnu" data-bs-slide ="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#chinnu" data-bs-slide ="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </html>
+</body>
+</html>

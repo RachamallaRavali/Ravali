@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            position: absolute;
+            left: 180px;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="password" id="n1">
+    <button class="m1" ondblclick="h1()">Show</button>
+    
+    <script>
+        // var a1=document.getElementById("n1");
+        var a1=document.querySelector("#n1");
+        var btn=document.querySelector(".m1");
+        console.log(a1.type==="password");
+        function h1(){
+            if(a1.type==="password"){
+                a1.type="text";
+                btn.innerHTML="hide";
+            }
+            else{
+                a1.type="password";
+                btn.innerHTML="show";
+            }
+        }
+    </script>
+
+
+</body>
+</html>

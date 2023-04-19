@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .result{
+            display:none;
+            
+        }
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+
+    </div>
+    <form>
+        <p>1.What is the size of byte variable?</p>
+        <input type="radio" name="a1" value="A">
+        <lable for="">A.8 bit</lable><br>
+        <input type="radio" name="a1" value="B">
+        <lable for="">B.16 bit</lable><br>
+        <input type="radio" name="a1" value="C">
+        <lable for="">C.32 bit</lable><br>
+        <input type="radio" name="a1" value="D">
+        <lable for="">D.64 bit</lable><br>
+
+        <p>2. Can we have two public classes in one java file?</p>
+        <input type="radio" name="a2" value="A">
+        <lable for="">A.True</lable><br>
+        <input type="radio" name="a2" value="B">
+        <label for="">B.False</label><br>
+
+        <p>3.What is the default value of byte variable? </p>
+        <input type="radio" name="a3" value="A">
+        <lable for="">A.0</lable><br>
+        <input type="radio" name="a3" value="B">
+        <lable for="">B.0.0</lable><br>
+        <input type="radio" name="a3" value="C">
+        <lable for="">C.null</lable><br>
+        <input type="radio" name="a3" value="D">
+        <label for="">D.undefined</label><br><br>
+
+        <p>4.HTML5 Stands for </p>
+        <input type="radio" name="q1" value="A">
+        <label for="">A.Hyper Text Mark Up Language</label><br>
+        <input type="radio" name="q1" value="B">
+        <label for="">B.Hypering Text Mark Up Language</label><br>
+        <input type="radio" name="q1" value="C">
+        <label for="">C.XYZ</label><br>
+    
+        <p>5.CSS3 Stands for </p>
+        <input type="radio" name="q2" value="A">
+        <label for="">A.Casade Style Sheets</label><br>
+        <input type="radio" name="q2" value="B">
+        <label for="">B.Cascading Style Sheets</label><br>
+        <input type="radio" name="q2" value="C">
+        <label for="">C.XYZ2</label>
+    
+        <p>6.JS Stands for </p>
+        <input type="radio" name="q3" value="A">
+        <label for="">A.Java Scripting</label><br>
+        <input type="radio" name="q3" value="B">
+        <label for="">B.JavaScript</label><br>
+        <input type="radio" name="q3" value="C">
+        <label for="">C.XYZ3</label><br><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        var f1=document.querySelector("form")
+        var r1=document.querySelector(".result")
+        var key=['A','B','A','A','A','B','B'];
+        f1.addEventListener("submit",function(e)
+        {
+           var score=0;
+            e.preventDefault();
+            r1.style.display="block";
+            var userAnswers=[f1.a1.value,f1.a2.value,f1.a3.value,f1.q1.value,f1.q2.value,f1.q3.value];
+            userAnswers.forEach(function(m1,index){
+                console.log(m1===key[index])
+                if(m1===key[index]){
+                    score=score+25;
+                }
+            })
+           console.log(score);
+      r1.querySelector('span').textContent='Thanks for writing exam';
+        })
+        f1.reset();
+        
+    </script>
+</body>
+</html>
